@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline Admin Panel</title>
+    <title>Books shop Seller</title>
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
-    <link rel="icon" href="{% static 'icon/favicon.ico' %}">
+    <link rel="icon" href="{% static 'assets/img/al.ico'}">
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -48,6 +48,9 @@
 
           <a href="{% url 'salar:profil' %}" class="list-group-item list-group-item-action py-2 ripple"
             ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Sozlamalar</span></a
+          >
+          <a href="{% url 'salar:create_product' %}" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Create</span></a
           >
            
         </div>

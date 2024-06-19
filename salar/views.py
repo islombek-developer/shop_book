@@ -23,7 +23,7 @@ class Delete(LoginRequiredMixin, View):
     def post(self, request, id):
         product = get_object_or_404(Product, id=id)
         product.delete()
-        return redirect('salar/dashboard')
+        return redirect('salar:dashboard')
     
 class CreateProductView(LoginRequiredMixin, View):
     def get(self, request):
