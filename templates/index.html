@@ -1,0 +1,297 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Furea - Furniture eCommerce HTML Template</title>
+  <meta name="description" content="Morden Bootstrap HTML5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+    
+   <!-- ======= All CSS Plugins here ======== -->
+  <link rel="stylesheet" href="{% static 'assets/css/plugins/swiper-bundle.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/plugins/glightbox.min.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+  
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Start header area -->
+    <header  class="header__section header__transparent mb-20 color-scheme-2">
+        <!-- <div class="header__topbar border-bottom">
+            <div class="container">
+                <div class="header__topbar--inner header__topbar--inner2 d-flex align-items-center justify-content-between">
+                    <ul class="header__info d-flex align-items-center">
+                        <li class="header__info--list">
+                            <svg class="header__info--icon" xmlns="http://www.w3.org/2000/svg" width="15.982" height="22.403" viewBox="0 0 15.982 22.403">
+                            <g id="Icon_feather-smartphone" data-name="Icon feather-smartphone" transform="translate(-4.5 -1.5)">
+                              <path id="Path_112" data-name="Path 112" d="M7.14,2h10.7a2.14,2.14,0,0,1,2.14,2.14V21.262a2.14,2.14,0,0,1-2.14,2.14H7.14A2.14,2.14,0,0,1,5,21.262V4.14A2.14,2.14,0,0,1,7.14,2Z" transform="translate(0 0)" fill="none" stroke="#121a25" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                              <path id="Path_113" data-name="Path 113" d="M12,18h0" transform="translate(0.491 1.122)" fill="none" stroke="#121a25" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </g>
+                          </svg>
+                          <a class="header__info--text" href="tel:+001-234-567-890">+001-234-567-890 </a>
+                        </li>
+                        <li class="header__info--list">
+                            <svg class="header__info--icon" xmlns="http://www.w3.org/2000/svg" width="25.712" height="17.142" viewBox="0 0 25.712 17.142">
+                            <g id="email" transform="translate(0 -85.333)">
+                              <g id="Group_265" data-name="Group 265" transform="translate(0 85.333)">
+                                <g id="Group_264" data-name="Group 264">
+                                  <path id="Path_140" data-name="Path 140" d="M23.034,85.333H2.678A2.682,2.682,0,0,0,0,88.011V99.8a2.682,2.682,0,0,0,2.678,2.678H23.034A2.682,2.682,0,0,0,25.712,99.8V88.011A2.682,2.682,0,0,0,23.034,85.333ZM24.641,99.8a1.609,1.609,0,0,1-1.607,1.607H2.678A1.609,1.609,0,0,1,1.071,99.8V88.011A1.609,1.609,0,0,1,2.678,86.4H23.034a1.609,1.609,0,0,1,1.607,1.607V99.8Z" transform="translate(0 -85.333)" fill="#121a25"/>
+                                </g>
+                              </g>
+                              <g id="Group_267" data-name="Group 267" transform="translate(2.143 87.476)">
+                                <g id="Group_266" data-name="Group 266">
+                                  <path id="Path_141" data-name="Path 141" d="M64,128.234a.536.536,0,0,0-.745-.139l-8.786,6.011a1.918,1.918,0,0,1-2.178,0l-8.786-6.011a.535.535,0,1,0-.6.884l8.786,6.011a2.98,2.98,0,0,0,3.388,0l8.786-6.011A.535.535,0,0,0,64,128.234Z" transform="translate(-42.67 -128)" fill="#121a25"/>
+                                </g>
+                              </g>
+                              <g id="Group_269" data-name="Group 269" transform="translate(2.142 93.904)">
+                                <g id="Group_268" data-name="Group 268">
+                                  <path id="Path_142" data-name="Path 142" d="M50.022,256.188a.539.539,0,0,0-.755-.069l-6.428,5.357a.536.536,0,0,0,.687.824l6.428-5.357A.537.537,0,0,0,50.022,256.188Z" transform="translate(-42.646 -255.996)" fill="#121a25"/>
+                                </g>
+                              </g>
+                              <g id="Group_271" data-name="Group 271" transform="translate(16.07 93.903)">
+                                <g id="Group_270" data-name="Group 270">
+                                  <path id="Path_143" data-name="Path 143" d="M327.309,261.475l-6.428-5.357a.536.536,0,0,0-.687.824l6.428,5.357a.536.536,0,0,0,.687-.824Z" transform="translate(-320.001 -255.995)" fill="#121a25"/>
+                                </g>
+                              </g>
+                            </g>
+                            </svg>
+                          <a class="header__info--text" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                    </ul>
+                    <div class="header__shipping">
+                        <p class="header__shipping--text">Get Up To 80% off In your first Offer!</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div> -->
+        <div style="background-color: rgb(217, 255, 0);" class="main__header main__header--style2">
+            <div class="container">
+                <div class="main__header--inner d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="#"><img class="main__logo--img" src="{% static 'assets/img/al.png' %}" alt="logo-img"></a></h1>
+                    </div>
+                    <div class="header__search--widget d-none d-lg-block">
+                        <form class="d-flex header__search--form" method="get">
+                            <div class="header__search--box">
+                                <label>
+                                    <input class="header__search--input" name="search" placeholder="Search Products Here..." type="text">
+                                </label>
+                                <button class="header__search--button bg__secondary text-white" aria-label="search button" type="submit">
+                                    <svg class="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="27.51" height="26.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__account">
+                        <ul class="d-flex">
+                            <li class="header__account--items  header__account--search__items d-md-none">
+                                <a class="header__account--btn search__open--btn" href="javascript:void(0)">
+                                    <svg class="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>  
+                                    <span class="visually-hidden">Search</span>
+                                </a>
+                            </li>
+                            <li class="header__account--items">
+                            {% if user.is_authenticated %}
+                                      
+                                {% if user.user_role == 'admin' %}
+                                <a class="header__account--btn" href="{% url 'client:dashboard' %}">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
+                                    <span class="visually-hidden">My Account</span>
+                                </a>
+                                {% elif user.user_role == 'sallar' %}
+                                <a class="header__account--btn" href="{% url 'salar:dashboard' %}">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
+                                    <span class="visually-hidden">My Account</span>
+                                </a>
+                                {% else %}
+                                <a class="header__account--btn" href="{% url 'client:profil' %}">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
+                                    <span class="visually-hidden">My Account</span>
+                                </a>
+                                {% endif %}
+                            {% endif %}
+                            
+                               
+                            </li>
+                            <li class="header__account--items d-md-none">
+                                <a class="header__account--btn" href="{% url 'client:carts' %}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.526" height="21.82" viewBox="0 0 24.526 21.82">
+                                        <path  d="M12.263,21.82a1.438,1.438,0,0,1-.948-.356c-.991-.866-1.946-1.681-2.789-2.4l0,0a51.865,51.865,0,0,1-6.089-5.715A9.129,9.129,0,0,1,0,7.371,7.666,7.666,0,0,1,1.946,2.135,6.6,6.6,0,0,1,6.852,0a6.169,6.169,0,0,1,3.854,1.33,7.884,7.884,0,0,1,1.558,1.627A7.885,7.885,0,0,1,13.821,1.33,6.169,6.169,0,0,1,17.675,0,6.6,6.6,0,0,1,22.58,2.135a7.665,7.665,0,0,1,1.945,5.235,9.128,9.128,0,0,1-2.432,5.975,51.86,51.86,0,0,1-6.089,5.715c-.844.719-1.8,1.535-2.794,2.4a1.439,1.439,0,0,1-.948.356ZM6.852,1.437A5.174,5.174,0,0,0,3,3.109,6.236,6.236,0,0,0,1.437,7.371a7.681,7.681,0,0,0,2.1,5.059,51.039,51.039,0,0,0,5.915,5.539l0,0c.846.721,1.8,1.538,2.8,2.411,1-.874,1.965-1.693,2.812-2.415a51.052,51.052,0,0,0,5.914-5.538,7.682,7.682,0,0,0,2.1-5.059,6.236,6.236,0,0,0-1.565-4.262,5.174,5.174,0,0,0-3.85-1.672A4.765,4.765,0,0,0,14.7,2.467a6.971,6.971,0,0,0-1.658,1.918.907.907,0,0,1-1.558,0A6.965,6.965,0,0,0,9.826,2.467a4.765,4.765,0,0,0-2.975-1.03Zm0,0" transform="translate(0 0)" fill="currentColor"/>
+                                    </svg>
+                                      
+                                    <span class="items__count wishlist">{{cart}}</span> 
+                                </a>
+                            </li>
+                            <li class="header__account--items">
+                                <a class="header__account--btn minicart__open--btn" href="{% url 'client:carts' %}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.897" height="21.565" viewBox="0 0 18.897 21.565">
+                                        <path  d="M16.84,8.082V6.091a4.725,4.725,0,1,0-9.449,0v4.725a.675.675,0,0,0,1.35,0V9.432h5.4V8.082h-5.4V6.091a3.375,3.375,0,0,1,6.75,0v4.691a.675.675,0,1,0,1.35,0V9.433h3.374V21.581H4.017V9.432H6.041V8.082H2.667V21.641a1.289,1.289,0,0,0,1.289,1.29h16.32a1.289,1.289,0,0,0,1.289-1.29V8.082Z" transform="translate(-2.667 -1.366)" fill="currentColor"/>
+                                    </svg>
+                                    <span class="items__count">{{cart}}</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom header__sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="header__menu position__relative d-none d-lg-block">
+                            <nav class="header__menu--navigation">
+                                <ul class="d-flex justify-content-center">
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="{% url 'client:products' %}">Home </a>
+                                     
+                                    </li> 
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="#">Categoryies </a>
+                                        <ul class="header__sub--menu">
+                                            {% for cat in cotegory %}
+                                                <li class="header__sub--menu__items"><a href="{% url 'client:categor' cat.id %}" class="header__sub--menu__link">{{cat.name}}</a></li>
+                                            {% endfor %}
+                                            
+                                        </ul>
+                                    </li>
+                                    {% if user.is_authenticated %}
+                                    <li class="header__menu--items mega__menu--items">
+                                        <a class="header__menu--link" href="{% url 'client:logout' %}">logo ut</a>
+                                    </li>
+                                    {% endif %}
+                                    {% if user.is_authenticated %}
+                                      
+                                    {% else %}
+                                        <li class="header__menu--items mega__menu--items">
+                                            <a class="header__menu--link" href="{% url 'client:login' %}">Log in</a>
+                                        </li>
+                                        <li class="header__menu--items mega__menu--items">
+                                            <a class="header__menu--link" href="{% url 'client:register2' %}">Register</a>
+                                        </li>
+                                    {% endif %}
+                                 
+                                    
+                                    <!-- {% if user.user_role == 'admin' %}
+                                        <li class="header__menu--items mega__menu--items">
+                                            <a class="header__menu--link" href="{% url 'client:register' %}">register </a>
+                                        </li>
+                                    {% endif %} -->
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- End Offcanvas stikcy toolbar -->
+
+        <!-- Start offCanvas minicart -->
+        
+        <!-- End offCanvas minicart -->
+
+        <!-- Start serch box area -->
+        <div  class="predictive__search--box color-scheme-2" tabindex="-1">
+            <div class="predictive__search--box__inner">
+                <h2 class="predictive__search--title">Search Products</h2>
+                <form class="predictive__search--form" action="#">
+                    
+                    <label>
+                        <input class="predictive__search--input" placeholder="Search Here" type="text">
+                    </label>
+                    <button class="predictive__search--button" aria-label="search button"><svg class="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="30.51" height="25.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>  </button>
+                </form>
+            </div>
+            <button class="predictive__search--close__btn" aria-label="search close btn">
+                <svg class="predictive__search--close__icon" xmlns="http://www.w3.org/2000/svg" width="40.51" height="30.443"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            </button>
+        </div>
+        <!-- End serch box area -->
+    </header>
+    <!-- End header area -->
+{% block content %}
+{% endblock content %}
+
+
+    <footer  class="footer__section footer__bg color-scheme-2">
+        <div class="container-fluid">
+            <div class="main__footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                    
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="footer__bottom d-flex justify-content-between align-items-center">
+                <p class="copyright__content">Copyright © 2022 <a class="copyright__content--link" href="index.html">Furea</a> . All Rights Reserved.Design By Furea</p>
+                <div class="footer__payment text-right">
+                    <img class="footer__payment--visa__card display-block" src="{% static 'assets/img/other/payment-visa-card.webp' %}" alt="visa-card">
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <div class="newsletter__popup" data-animation="slideInUp">
+        <div class="newsletter__popup--inner">
+            <button class="newsletter__popup--close__btn" aria-label="search close button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
+            </button>
+            <div class="box newsletter__popup--box d-flex align-items-center">
+                <div class="newsletter__popup--thumbnail">
+                    <img class="newsletter__popup--thumbnail__img display-block" src="{% static 'assets/img/kitob.jpg' %}" alt="newsletter-popup-thumb">
+                </div>
+                <div class="newsletter__popup--box__right">
+                    <h2 class="newsletter__popup--title">Join Our Newsletter</h2>
+                    <div class="newsletter__popup--content">
+                        <label class="newsletter__popup--content--desc">Enter your email address to subscribe our notification of our new post &amp; features by email.</label>
+                        <div class="newsletter__popup--subscribe" id="frm_subscribe">
+                            <form class="newsletter__popup--subscribe__form">
+                                <input class="newsletter__popup--subscribe__input" type="text" placeholder="Enter you email address here...">
+                                <button class="newsletter__popup--subscribe__btn">Subscribe</button>
+                            </form>
+                            <div class="newsletter__popup--footer">
+                                <input type="checkbox" id="newsletter__dont--show">
+                                <label class="newsletter__popup--dontshow__again--text" for="newsletter__dont--show">Don't show this popup again</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End News letter popup -->
+
+    <!-- Scroll top bar -->
+    <button class="color-scheme-2" aria-label="scroll top btn" id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 244l144-144 144 144M256 120v292"/></svg></button>
+    
+  <!-- All Script JS Plugins here  -->
+  <script src="{% static 'assets/js/vendor/popper.js' %}" defer="defer"></script>
+  <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}" defer="defer"></script>
+  <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}" defer="defer"></script>
+  <script src="{% static 'assets/js/plugins/glightbox.min.js' %}" defer="defer"></script>
+
+  <!-- Customscript js -->
+  <script src="{% static 'assets/js/script.js' %}" defer="defer"></script>
+  <script src="{% static 'css/sa.js' %}" defer="defer"></script>
+</body>
+</html>

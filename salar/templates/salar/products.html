@@ -1,0 +1,47 @@
+{% extends 'salar/dashboard.html' %}
+
+{% block content %}
+<style>
+  .product-image {
+      max-width: 100px; /* Adjust the maximum width as needed */
+      max-height: 80px; /* Adjust the maximum height as needed */
+  }
+</style>
+<div class="container mt-5">
+    <a class="btn btn-outline-info" href="{% url 'salar:create_product' %}">Create</a>
+
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Category</th>
+                <th scope="col">image</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <th scope="row">{{ product.id }}</th>
+                <td><a href="#">{{ product.name }}</a></td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>{{ product.category }}</td>
+                <td><img src="{{ product.image.url }}" alt="" class="product-image"></td>
+                <td>
+                  <form action="{% url 'salar:delete' product.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                  </form>
+                
+                    <a class="btn btn-outline-info" href="{% url 'salar:update' product.id %}">Update</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

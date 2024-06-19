@@ -1,0 +1,144 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+    <main class="main__content_wrapper">
+        
+        <!-- Start breadcrumb section -->
+        <section  >
+            <div class="container">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="breadcrumb__content">
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="{% url 'client:products' %}">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product__details--section section--padding">
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-md-2">
+                    <div class="col">
+                        <div class="product__details--media">
+                            <div class="product__media--preview  swiper">
+                                <div class="swiper-wrapper">
+                                  
+                                    <div class="swiper-slide">
+                                        <div class="product__media--preview__items">
+                                            <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" ><img class="product__media--preview__items--img" src="{{product.image.url}}" alt="product-media-img"></a>
+                                            <div class="product__media--view__icon">
+                                                <a class="product__media--view__icon--link glightbox"  data-gallery="product-media-preview">
+                                                    <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
+                                                    <span class="visually-hidden">Media Gallery</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__media--preview__items">
+                                            <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product6.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product6.webp" alt="product-media-img"></a>
+                                            <div class="product__media--view__icon">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product6.webp" data-gallery="product-media-preview">
+                                                    <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
+                                                    <span class="visually-hidden">Media Gallery</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="product__details--info">
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <h2 class="product__details--info__title mb-15">{{product.name}}</h2>
+                                <div class="product__details--info__price mb-10">
+                                    <span class="current__price">${{product.price}}</span>
+                                </div>
+                                <div class="product__details--info__rating d-flex align-items-center mb-15">
+                                    <ul class="rating product__list--rating d-flex">
+                                        <li class="rating__list">
+                                            <span class="rating__list--icon">
+                                                <svg class="rating__list--icon__svg" xmlns="http://www.w3.org/2000/svg" width="13.105" height="13.732" viewBox="0 0 10.105 9.732">
+                                                <path data-name="star - Copy" d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z" transform="translate(0 -0.018)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="rating__list">
+                                            <span class="rating__list--icon">
+                                                <svg class="rating__list--icon__svg" xmlns="http://www.w3.org/2000/svg" width="13.105" height="13.732" viewBox="0 0 10.105 9.732">
+                                                <path data-name="star - Copy" d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z" transform="translate(0 -0.018)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="rating__list">
+                                            <span class="rating__list--icon">
+                                                <svg class="rating__list--icon__svg" xmlns="http://www.w3.org/2000/svg" width="13.105" height="13.732" viewBox="0 0 10.105 9.732">
+                                                <path data-name="star - Copy" d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z" transform="translate(0 -0.018)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="rating__list">
+                                            <span class="rating__list--icon">
+                                                <svg class="rating__list--icon__svg" xmlns="http://www.w3.org/2000/svg" width="13.105" height="13.732" viewBox="0 0 10.105 9.732">
+                                                <path data-name="star - Copy" d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z" transform="translate(0 -0.018)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="rating__list">
+                                            <span class="rating__list--icon">
+                                                <svg class="rating__list--icon__svg" xmlns="http://www.w3.org/2000/svg" width="13.105" height="13.732" viewBox="0 0 10.105 9.732">
+                                                <path data-name="star - Copy" d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z" transform="translate(0 -0.018)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="rating__list"><span class="rating__list--text">( 5.0)</span></li>
+                                    </ul>
+                                </div>
+                                <p class="product__details--info__desc mb-20">{{product.description}}</p>
+                                <div class="product__variant">
+                                    <div class="product__variant--list mb-20">
+                                        
+                                    </div>
+                                    {% if user.user_role == 'client' %}
+                                        <div class="product__variant--list quantity d-flex align-items-center mb-20">
+                                            <div class="quantity__box">
+                                                <label>
+                                                    <input type="number" class="quantity__number quickview__value--number" name="cart" type="number" value="1" />
+                                                </label>
+                                            </div>
+                                            <button class="quickview__cart--btn primary__btn" type="submit">Add To Cart</button>  
+                                        </div>
+                                  
+                                    {% endif %}
+
+                                    <!-- <div class="product__variant--list mb-15">
+                                       
+                                        <button class="variant__buy--now__btn primary__btn" type="submit">Buy it now</button>
+                                    </div> -->
+                                   
+                                </div>
+                        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+
+    </main>
+
+   
+  
+  
+</body>
+</html>
+{% endblock content %}

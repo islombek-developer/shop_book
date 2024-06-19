@@ -1,0 +1,37 @@
+{% extends 'client/dashboard.html' %}
+
+{% block content %}
+<div class="container mt-5">
+<table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Full name</th>
+        <th scope="col">User name</th>
+        <th scope="col">phone number</th>
+        <th scope="col"> address</th>
+        <th scope="col"> Role</th>
+        <th scope="col">Button</th>
+      </tr>
+    </thead>
+    {% for i in client %}
+    <tbody>
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td><a href="#">{{i.user.first_name}} {{i.user.last_name}}</a></td>
+        <td>{{i.user.username}}</td>
+        <td>{{i.user.phone_number}}</td>
+        <td>{{i.user.address}}</td>
+        <td>{{i.user.user_role}}</td>
+        <td>
+          
+          <a class="btn btn-outline-danger" href="{% url 'client:deletec' i.id %}">Delete</a>
+    
+        </td>
+      </tr>
+      
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}
